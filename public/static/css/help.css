@@ -1,0 +1,71 @@
+.top li{
+	display: inline-block;
+	border-left: 1px solid #006699;
+}
+.banner{
+	background: url(../img/11.png);
+	height: 300px;
+}
+
+.banner form{
+	width: 50%;
+	position: relative;
+	padding-top:100px; 
+	margin: 0 auto;
+}
+
+.banner img{
+	position: absolute;
+	margin-top:10px;
+	margin-left: 10px;
+}
+.banner input{
+	padding-left: 40px;
+}
+.banner button{
+	position: absolute;
+}
+.search{
+	width: 80%;
+	display: inline-block;
+}
+/*广告结束*/
+
+.public h2{
+	display: inline-block;
+} 
+/* 公告结束*/
+
+
+
+
+.question-title{
+	border-left: 3px solid blue;
+	padding-left: 30px;
+}
+.question-main{
+	width: 25%;
+	float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

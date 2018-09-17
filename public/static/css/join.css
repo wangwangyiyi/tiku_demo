@@ -1,0 +1,8 @@
+.join-main{
+	width: 60%;
+	margin: 0 auto;
+}
+.join-main li{
+	list-style-type: square;
+	font-size: 13px;
+}

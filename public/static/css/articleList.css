@@ -1,0 +1,109 @@
+.margin-30{
+	margin: 30px 0;
+}
+.margin-10{
+	margin: 10px 0;
+}
+.font-color-red{
+	color:red;
+}
+.font-color-green{
+	color:green;
+}
+.live{
+	height: 540px;
+	background-color: blue;
+}
+.live-content{
+	width: 80%;
+	margin: 0 auto;
+}
+.live-left{
+	width: 75%;
+	height: 540px;
+
+	background-color: white;
+	float: left;
+}
+.live-right{
+	width: 25%;
+	height: 540px;
+	background-color: #3f4042;
+	
+	float: left;
+}
+.live-right h3{
+	background-color: #4f5153;
+	margin-bottom: 0;
+}
+.live-item{
+	background-color: #3f4042;
+	border-bottom: 1px solid red;
+}
+.time{
+	float: left;
+	width: 60%;
+}
+.catename{
+	float: left;
+	width: 40%;
+}
+/*直播结束*/
+.cate-header-left,.cate-header-right{
+	width: 50%;
+	float: left;
+}
+.cate-header-right{
+	color:#a0a0a0;
+}
+.cate-header-right a{
+	float: right!important;
+}
+.cate-group a{
+	width: 25%;
+	float: left;
+	padding:10px 20px;
+}
+.cate-content{
+	width:100%;
+	height: 400px;
+	font-size: 12px;
+	position: relative;
+}
+.new{
+	position: absolute;
+	top: -5px;
+	left: 10px;
+	width: 120px;
+	font-size: 13px;
+	padding:3px 10px;
+	background-color: #6fce2a;
+	color:#ffffff;
+	display: inline-block;
+}
+.cate-desc{
+	width: 100%;
+}
+.money-model,.cate-class-time,.score,.peron-count{
+	float: left;
+	width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

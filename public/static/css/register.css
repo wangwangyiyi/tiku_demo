@@ -1,0 +1,50 @@
+li{
+	list-style-type: none;
+}
+a{
+	color: #a49999;
+}
+.header{
+	padding: 40px 0;
+	background-color: #f8f8f8;
+}
+.header-left{
+	width: 50%;
+	float: left;
+}
+.header-right{
+	width: 50%;
+	float: left;
+}
+.header-right>ul{
+	width: 60%;
+	float: right;
+}
+/*头部结束*/
+
+.login{
+	width: 400px;
+	margin: 88px auto;
+}
+.re-password{
+	float: right;
+}
+.friend-login{
+	margin:30px auto;
+}
+.btn-success{
+	width: 90%;
+	float: right;
+}
+.username,.password{
+	display: inline-block;
+	width: 300px;
+}
+.list-inline li{
+	display: inline-block;
+}
+.copyright{
+	color:#a0a0a0;
+	font-size: 12px;
+}
+/*底部结束*/

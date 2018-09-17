@@ -1,0 +1,38 @@
+.live{
+	height: 540px;
+	background-color: blue;
+}
+.live-content{
+	width: 80%;
+	margin: 0 auto;
+}
+.live-left{
+	width: 75%;
+	height: 540px;
+
+	background-color: white;
+	float: left;
+}
+.live-right{
+	width: 25%;
+	height: 540px;
+
+	float: left;
+}
+.live-right h3{
+	background-color: #4f5153;
+	margin-bottom: 0;
+}
+.live-item{
+	background-color: #3f4042;
+	border-bottom: 1px solid red;
+}
+.live-item {
+	color: white;
+}
+.time{
+	float: left;
+}
+.catename{
+	width: 100%;
+}

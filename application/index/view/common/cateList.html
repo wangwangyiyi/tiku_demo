@@ -1,0 +1,26 @@
+<div class="container cate-group clearfix margin-top-30">
+		<div class="cate-header clearfix">
+			<h3 class="cate-header-left margin-30 bold">{$category.catename}</h3>
+			<div class="cate-header-right  margin-30 text-right"><a class="cate-header-right  margin-30 text-right" href="{:url('Category/category')}">查看更多</a></div>
+
+		</div>
+		{volist name="catename" id="vo"}
+		<a href="{:url('Article/article',array('id'=>$vo['id']))}" class="clearfix">
+			<div class="cate-content">
+				<div class="new">{$vo.name}</div>
+				<div class="cate-img"><img width="100%" src="__public__/upLoadFiles/{$vo.pic}" alt=""></div>
+				<div class="clearfix"></div>
+
+				<div class="cate-desc margin-10">{$vo.desc}</div>
+				<div class="cate-class-time">课时：{$vo.time}</div>
+				<h3 class="money-model lead text-right font-color-green">{$vo.shop}</h3>
+
+				<div class="clearfix  margin-10"></div>
+				<div class="score">评分:
+					<img src="__public__/static/img/h.png" alt="">{$vo.scrope}	
+				</div>
+				<div class="person-count text-right"><span class="font-color-red">{$vo.people}</span>人已经学习</div>
+			</div>
+		</a>
+		{/volist}
+	</div>

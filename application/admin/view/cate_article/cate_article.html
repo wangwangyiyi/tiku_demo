@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>梦中程序员管理后台--QQ:305530751</title>
+    <link rel="shortcut icon" href="__public__/admin/img/logo.jpg" type="image/x-icon">
+    <link href="__public__/admin/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="__public__/admin/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="__public__/admin/css/weather-icons.min.css" rel="stylesheet" />
+    <link href="__public__/admin/css/beyond.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+
+<body>
+    <!-- Loading Container -->
+    <div class="loading-container">
+        <div class="loader"></div>
+    </div>
+    <!--  /Loading Container -->
+    <!--  /Loading Container -->
+    <!-- Navbar -->
+    <?php include_once('/../application/admin/view/common/header.html');?>
+   
+    <!-- /Navbar -->
+    <!-- Main Container -->
+    <div class="main-container container-fluid">
+        <!-- Page Container -->
+    {include file="common/left"/}
+       
+            <!-- /Page Sidebar -->
+            <!-- Page Content -->
+               <div class="page-content">
+                <!-- Page Breadcrumb -->
+                <div class="page-breadcrumbs">
+                    <ul class="breadcrumb">
+                        <li class="active">
+                            <i class="fa fa-home"></i>&nbsp;栏目管理
+                        </li>
+                        <li>栏目列表</li>
+                    </ul>
+                </div>
+                <!-- /Page Breadcrumb -->
+               <div class="page-body">
+                    <a href="{:url('CateArticle/add')}" class="btn btn-sm btn-primary"><i class="fa fa-plus"></i>&nbsp;栏目添加</a>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="widget">
+                                <div class="widget-header">
+                                    <span class="widget-caption">栏目列表</span>
+                                    <div class="widget-buttons">
+                                       
+                                    </div>
+                                </div>
+                                <div class="widget-body">
+                                    <table class="table table-hover table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th  width="3%">ID</th>
+                                                <th  width="10%">名称</th>
+                                                <th  width="10%">描述</th>
+                                                <th  width="5%">是否免费</th>
+                                                <th  width="5%">评分</th>
+                                                <th  width="5%">观看人数</th>
+                                                <th  width="10%">视频资源</th>
+                                                <th  width="10%">所属栏目</th>
+                                                <th  width="10%">LOGO</th>
+                                                <th  width="20%">章节内容</th>
+                                                <th  width="5%">生成时间</th>
+                                                <th  width="10%">操作</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            {volist name="result" id="vo"}
+                                            <tr>
+                                                <td>{$vo.id}</td>
+                                                <td>{$vo.name}</td>
+                                                <td>{$vo.desc}</td>
+                                                <td>{$vo.shop}</td>
+                                                <td>{$vo.scrope}</td>
+                                                <td>{$vo.people}</td>
+                                                <td>{$vo.resource}</td>
+                                                <td>{$vo.catename}</td>
+                                                <td>{$vo.pic}</td>
+                                                <td>{$vo.content}</td>
+
+                                                <td>{$vo.time}</td>
+                                                <td>
+                                                    <a href="edit?id={$vo.id}">修改</a>
+                                                    <a href="del?id={$vo.id}">删除</a>
+                                                </td>
+                                            </tr>
+                                            {/volist}
+                                        </tbody>
+                                        
+                                        
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Page Body -->
+            </div>
+            <!-- /Page Content -->
+            <img src="C:/wamp/www/yi/application/admin/upLoadFiles/1.png" alt="">
+
+        </div>
+        <!-- /Page Container -->
+        <!-- Main Container -->
+
+    </div>
+
+    <script src="__public__/admin/js/skins.min.js"></script>
+    <!--Basic Scripts-->
+    <script src="__public__/admin/js/jquery.min.js"></script>
+    <script src="__public__/admin/js/bootstrap.min.js"></script>
+    <script src="__public__/admin/js/slimscroll/jquery.slimscroll.min.js"></script>
+    <!--Beyond Scripts-->
+    <script src="__public__/admin/js/beyond.js"></script>
+    <script>
+        $(window).bind("load", function () {
+
+            /*Sets Themed Colors Based on Themes*/
+            themeprimary = getThemeColorFromCss('themeprimary');
+            themesecondary = getThemeColorFromCss('themesecondary');
+            themethirdcolor = getThemeColorFromCss('themethirdcolor');
+            themefourthcolor = getThemeColorFromCss('themefourthcolor');
+            themefifthcolor = getThemeColorFromCss('themefifthcolor');
+
+        });
+        function check(){
+            return confirm('确认删除？');
+        }
+    </script>
+</body>
+<!--  /Body -->
+</html>

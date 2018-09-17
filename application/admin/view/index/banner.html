@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>梦中程序员管理后台--QQ:305530751</title>
+    <link rel="shortcut icon" href="__public__/admin/img/logo.jpg" type="image/x-icon">
+    <link href="__public__/admin/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="__public__/admin/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="__public__/admin/css/weather-icons.min.css" rel="stylesheet" />
+    <link href="__public__/admin/css/beyond.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+
+<body>
+    <!-- Loading Container -->
+    <div class="loading-container">
+        <div class="loader"></div>
+    </div>
+    <!--  /Loading Container -->
+    <!-- Navbar -->
+    <?php include_once('/../application/admin/view/common/header.html');?>
+    <!-- /Navbar -->
+    <!-- Main Container -->
+    <div class="main-container container-fluid">
+        <!-- Page Container -->
+        <div class="page-container">
+    {include file="common/left"/}
+
+            <!-- Page Sidebar -->
+            
+            <!-- /Page Sidebar -->
+            <!-- Page Content -->
+            <div class="page-content">
+                <!-- Page Breadcrumb -->
+                <div class="page-breadcrumbs">
+                    <ul class="breadcrumb">
+                        <li class="active">
+                            <i class="fa fa-home"></i>&nbsp;控制面板
+                        </li>
+                    </ul>
+                </div>
+                <!-- /Page Breadcrumb -->
+                <!-- Page Body -->
+
+   <a href="{:url('Index/banner_add')}" class="btn btn-sm btn-primary"><i class="fa fa-plus"></i>&nbsp;轮播图片添加</a>       
+    <div class="page-body">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="widget">
+                                <div class="widget-header">
+                                    <span class="widget-caption">LOGO</span>
+                                   
+                                </div>
+                                <div class="widget-body">
+
+                                    <table class="table table-hover table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>标题</th>
+                                                <th>预览</th>
+                                                <th>操作</th>
+                                                <th>操作</th>
+
+                                            </tr>
+                                        </thead>
+                                        {volist name="banner_img" id="vo"}
+
+                                        <tbody>
+                                            <tr>
+                                                <td>{$vo.id}</td>
+                                                <td>{$vo.title}</td>
+                                                <td width="30%"><img width="100%" src="__public__/upLoadFiles/{$vo.img}" alt="logo"></td>
+
+                                                <td><a href="bannerEdit?id={$vo.id}">修改</a></td>
+                                                <td><a href="bannerDel?id={$vo.id}">删除</a></td>
+
+                                            </tr>
+                                        </tbody>
+                                        {/volist}
+
+                                    </table>
+
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        <!-- /Page Container -->
+        <!-- Main Container -->
+
+    </div>
+
+    <script src="__public__/admin/js/skins.min.js"></script>
+    <!--Basic Scripts-->
+    <script src="__public__/admin/js/jquery.min.js"></script>
+    <script src="__public__/admin/js/bootstrap.min.js"></script>
+    <script src="__public__/admin/js/slimscroll/jquery.slimscroll.min.js"></script>
+    <!--Beyond Scripts-->
+    <script src="__public__/admin/js/beyond.js"></script>
+    <script>
+        $(window).bind("load", function () {
+
+            /*Sets Themed Colors Based on Themes*/
+            themeprimary = getThemeColorFromCss('themeprimary');
+            themesecondary = getThemeColorFromCss('themesecondary');
+            themethirdcolor = getThemeColorFromCss('themethirdcolor');
+            themefourthcolor = getThemeColorFromCss('themefourthcolor');
+            themefifthcolor = getThemeColorFromCss('themefifthcolor');
+
+        });
+    </script>
+</body>
+<!--  /Body -->
+</html>

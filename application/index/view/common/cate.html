@@ -1,0 +1,17 @@
+			{volist name="category" id="vo"}
+			<div class="main-item-1">
+				<div class="main-item-parent">
+					<img class="margin-top-30" src="__public__/static/img/4_03.gif" alt="">
+					<p class="margin-top-30">{$vo.catename}</p>
+				</div>
+				<div class="main-item-list-children clearfix">
+					<ul class="clearfix">
+						{volist name="vo['children']" id="vo1"}
+							<li><a href="{:url('Category_list/category_list',array('cate_id'=>$vo1['id']))}">{$vo1.catename}</a></li>
+						{/volist}
+					</ul>
+				</div>
+			</div>
+			{/volist}
+			
+	

@@ -1,0 +1,17 @@
+<div class="header">
+			<div class="header-left">
+				{volist name="logo_img" id="vo"}
+				<a href="{:url('Index/index')}"><img src="__public__/upLoadFiles/{$vo.img}" height="50%" width="50%" alt="logo"></a>
+				{/volist}
+			</div>
+			<div class="header-right">
+				<ul  class="nav navbar">
+					<li><a href="{:url('Index/index')}">首页</a></li>
+					<li><a href="{:url('Live/live')}">直播课</a></li>
+					<li><a href="{:url('Category/category')}">章节课</a></li>
+					<li><a href="{:url('Vip/vip')}">VIP</a></li>
+					<li><a href="{:url('User/login')}">登录</a></li>
+					<li><a href="{:url('User/register')}">注册</a></li>
+				</ul>
+			</div>
+		</div>

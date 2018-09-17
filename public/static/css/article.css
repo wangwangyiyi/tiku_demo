@@ -1,0 +1,68 @@
+.article-title{
+	width: 100%;
+}
+.article-title h3{
+	height: 45px;
+	line-height: 45px;
+	margin-bottom: 0;
+	
+	width: 69%;
+	border: 1px solid blue; 
+	float: left;
+}
+.article-title-p{
+	height: 45px;
+	margin-bottom: 0;
+	line-height: 45px;
+	width: 30%;
+	border: 1px solid blue; 
+	float: left;
+}
+.article-content-mv{
+	border: 1px solid blue; 
+
+	width: 69%;
+	height: 540px;
+	background:black;
+	float: left;
+	font-size: 13px;
+
+}
+.article-content-list{
+	border: 1px solid blue; 
+	
+	width: 30%;
+	float: left;
+	font-size: 15px;
+	
+	height: 540px;
+}
+.article-content-list li{
+	width: 100%;
+/*	list-style-type: square;
+*/}
+.article-content-list a{
+	width: 65%;
+	float: left;
+}
+.article-content-list p{
+	width: 35%;
+	float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
